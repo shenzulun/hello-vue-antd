@@ -1,7 +1,15 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <a-button type="primary">Button></a-button>
+    <a-button type="primary">Button-primary</a-button>
+    <a-button type="default" disabled >Button-default</a-button>
+    <a-button type="dashed">Button-dashed</a-button>
+    <a-button type="danger">Button-danger</a-button>
+    <br/>
+    <ant-button-group>
+      <a-button type="primary">Button-primary</a-button>
+      <a-button type="default">Button-default</a-button>
+    </ant-button-group>
   </div>
 </template>
 
