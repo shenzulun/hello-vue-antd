@@ -11,10 +11,14 @@
       <a-button type="default" icon="close"></a-button>
       <a-button type="primary" icon="check" onclick="alert('ok')"></a-button>
     </Button>
+    <Button class="Group">
+      <a-button type="primary" icon="left">Go back</a-button>
+      <a-button type="primary" onclick="alert('right')">Go forward<a-icon type="right"/></a-button>
+    </Button>
     <br />
     <Button class="Group">
       <a-button type="primary" size="large">Button-primary</a-button>
-      <a-button type="default" loading="true">Button-default</a-button>
+      <a-button type="default" size="large" loading="true">Button-default</a-button>
     </Button>
   </div>
 </template>
