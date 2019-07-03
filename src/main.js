@@ -1,11 +1,13 @@
-import Vue from "vue";
-import { Button } from 'ant-design-vue';
-import App from "./App";
+import Vue from 'vue'
+import { Button } from 'ant-design-vue'
+import App from './App'
+import router from './router'
 
-Vue.component(Button.name, Button);
+Vue.component(Button.name, Button)
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = false
 
 new Vue({
+  router,
   render: h => h(App)
-}).$mount("#app");
+}).$mount('#app')

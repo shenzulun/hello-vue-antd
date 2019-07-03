@@ -1,33 +1,33 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <a-button type="primary">Button-primary</a-button>
-    <a-button type="default" disabled >Button-default</a-button>
-    <a-button type="dashed">Button-dashed</a-button>
-    <a-button type="danger">Button-danger</a-button>
-    <br/>
-    <ant-button-group>
-      <a-button type="primary">Button-primary</a-button>
-      <a-button type="default">Button-default</a-button>
-    </ant-button-group>
+    <p>
+      <!-- 使用 router-link 组件来导航. -->
+      <!-- 通过传入 `to` 属性指定链接. -->
+      <!-- <router-link> 默认会被渲染成一个 `<a>` 标签 -->
+      <router-link to="/button">button</router-link>
+      <router-link to="/icon">icon</router-link>
+    </p>
+    <!-- 路由出口 -->
+    <!-- 路由匹配到的组件将渲染在这里 -->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 /* eslint-disable */
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
     HelloWorld
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
